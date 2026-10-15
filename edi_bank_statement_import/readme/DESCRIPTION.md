@@ -1,7 +1,7 @@
-Plug bank_statement_import into EDI machinery.
+Plug bank statement file imports into EDI machinery.
 
-This module allows to use account_bank_statement_import to parse edi
-exchange (input). This allow you ro retrieve bank stazement from a any
-edi exchange backend (webservice, sftp, local filesystem, ...)
-
-TODO: shall we add an exchange type example as demo?
+This module uses `account_statement_import_file` to process incoming EDI
+exchanges. Bank statements can be retrieved through any EDI backend
+(webservice, SFTP, local filesystem, etc.). Install an appropriate
+statement-format module, such as `account_statement_import_camt`, to parse
+your bank's files.

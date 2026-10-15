@@ -4,14 +4,14 @@
 
 {
     "name": "EDI Bank statement import",
-    "summary": """Plug account_statement_import into EDI machinery.""",
-    "version": "14.0.1.0.0",
+    "summary": """Plug account_statement_import_file into EDI machinery.""",
+    "version": "18.0.1.0.0",
     "development_status": "Alpha",
     "license": "AGPL-3",
     "website": "https://github.com/OCA/edi",
     "author": "AGEPoly,Odoo Community Association (OCA)",
     "maintainers": ["TeoGoddet"],
-    "depends": ["edi_oca", "account_statement_import"],
+    "depends": ["edi_oca", "account_statement_import_file"],
     "data": ["data/data.xml"],
     "auto_install": True,
 }
