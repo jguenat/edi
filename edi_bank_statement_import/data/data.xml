@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="edi_exchange_backend" model="edi.backend.type">
+        <field name="name">Bank Statement Backend Type</field>
+        <field name="code">bank_statement_backend_type</field>
+    </record>
+    <record id="edi_exchange_type" model="edi.exchange.type">
+        <field name="name">Bank Statement Import</field>
+        <field name="code">bank_statement_import</field>
+        <field name="backend_type_id" ref="edi_exchange_backend" />
+        <field name="direction">input</field>
+        <field name="exchange_file_ext">xml</field>
+        <field
+            name="process_model_id"
+            ref="edi_component_oca.model_edi_oca_component_handler"
+        />
+        <field name="advanced_settings_edit">
+components:
+    process:
+        usage: input.process.bank.statement
+bank_statement:
+    wiz_ctx: {}
+        </field>
+    </record>
+</odoo>
