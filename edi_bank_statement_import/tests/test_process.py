@@ -4,8 +4,7 @@
 
 import base64
 import textwrap
-
-import mock
+from unittest import mock
 
 from odoo.addons.component.tests.common import SavepointComponentCase
 from odoo.addons.edi_oca.tests.common import EDIBackendTestMixin

@@ -48,7 +48,6 @@ class EDIExchangeBankStatementInput(Component):
             return True
         else:
             for statement_id in statement_ids:
-
                 child_exchange = self.exchange_record.create(
                     {
                         "identifier": "%s_%s"
